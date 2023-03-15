@@ -6,7 +6,7 @@
 /*   By: amejia <amejia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/08 13:54:00 by amejia            #+#    #+#             */
-/*   Updated: 2023/03/12 01:13:21 by amejia           ###   ########.fr       */
+/*   Updated: 2023/03/15 23:34:39 by amejia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,5 +87,7 @@ void			list_qsort(long *list, size_t len);
 int				check_sorted(t_sort_params *sortp);
 void			graceful_malloc_fail(void *ptr);
 void			checker(t_sort_params *sortp);
+void			fill_order(t_sort_params *sortp);
+void			movement(t_sort_params *sortp, char stack, char *mv);
 
 #endif

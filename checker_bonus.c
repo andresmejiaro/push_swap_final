@@ -6,7 +6,7 @@
 /*   By: amejia <amejia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/11 05:11:20 by andres            #+#    #+#             */
-/*   Updated: 2023/03/12 01:06:40 by amejia           ###   ########.fr       */
+/*   Updated: 2023/03/15 23:42:17 by amejia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	checker(t_sort_params *sortp)
 	while (command != NULL)
 	{	
 		command = get_next_line(2);
-		if (command == NULL)
+		if (command == NULL || ft_strchr(command, '\n') == 0 )
 			break ;
 		tmp = ft_strchr(command, '\n');
 		*tmp = '\0';
